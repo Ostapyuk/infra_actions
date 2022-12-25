@@ -63,6 +63,6 @@ jobs:
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull ostapyukyaa/infra_actions
-          #остановка всех контейнеров
+          #остановка всех контейнеров 11
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 ostapyukyaa/infra_actions
